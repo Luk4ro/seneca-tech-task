@@ -20,7 +20,7 @@ export const Toggle = styled.div`
   width: 100%;
   margin: 14px 0;
   border-radius: ${borderRadius}px;
-  border: #000000 ${toggleBorderSize}px solid;
+  border: #FFFFFF ${toggleBorderSize}px solid;
   cursor: pointer;
 `
 
@@ -51,8 +51,9 @@ export const Answer = styled.span`
   font-family: Mulish;
   font-weight: bold;
   font-size: 24px;
-  color: hsla(${props => props.hue}, 10%, 30%, 1);;
+  color: hsla(${props => props.hue}, 10%, 30%, 1);
   z-index: 1;
+
   @media screen and (max-width: 600px) {
     font-size: 18px;
   }

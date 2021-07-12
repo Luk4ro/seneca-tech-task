@@ -7,3 +7,19 @@ export const Container = styled.div`
   width: 100%;
   height: auto;
 `
+
+export const Question = styled.h1`
+  color: #FFFFFF;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+`
+
+export const CurrentResult = styled.h2`
+  color: #FFFFFF;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+`

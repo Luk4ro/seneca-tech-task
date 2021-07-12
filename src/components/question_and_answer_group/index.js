@@ -28,7 +28,7 @@ const QuestionAndAnswerGroup = ({ question, correctAnswers, possibleAnswers }) =
 
   return (
     <S.Container hue={hue}>
-      {question}
+      <S.Question>{question}</S.Question>
       {
         selectedAnswers.map((_, index) => <Toggle
             key={index}
@@ -39,7 +39,7 @@ const QuestionAndAnswerGroup = ({ question, correctAnswers, possibleAnswers }) =
           />
         )
       }
-      {disabled ? 'The answer is Correct!' : 'The answer is incorrect'}
+      <S.CurrentResult>{disabled ? 'The answer is Correct!' : 'The answer is incorrect'}</S.CurrentResult>
     </S.Container>
   )
 }
